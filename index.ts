@@ -4,7 +4,7 @@ class Man {
     this.name = name;
   }
   say() {
-    console.log(this.name + ' say hello');
+    console.log(this.name + ' say hello' + 'adsf')
   }
 }
 
