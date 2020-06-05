@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: lightcyan;
+}
+.container {
+  border: 5px solid rgb(47, 130, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  box-sizing: border-box;
+}
+
+.video-box {
+  width: 1080px;
+  height: 480px;
+  background-color: lightgray;
+}
