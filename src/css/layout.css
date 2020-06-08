@@ -4,7 +4,6 @@ body {
   background: lightcyan;
 }
 .container {
-  border: 5px solid rgb(47, 130, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,6 +12,7 @@ body {
 }
 
 .video-box {
+  border: 5px solid rgb(47, 130, 255);
   width: 1080px;
   height: 480px;
   background-color: lightgray;
