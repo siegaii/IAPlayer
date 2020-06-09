@@ -1,0 +1,27 @@
+{
+  "name": "interactive-h5-player",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/siegaii/interactive-h5-player.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/siegaii/interactive-h5-player/issues"
+  },
+  "homepage": "https://github.com/siegaii/interactive-h5-player#readme",
+  "devDependencies": {
+    "webpack": "^4.43.0",
+    "webpack-dev": "^1.1.1"
+  }
+}
