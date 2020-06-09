@@ -91,3 +91,5 @@ sw.*
 
 # static source
 static
+
+public/video
