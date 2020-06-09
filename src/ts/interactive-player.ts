@@ -30,7 +30,7 @@ class InteractivePlayer {
         this.h5Player.setAttribute('playsinline', '');
         this.h5Player.setAttribute('x5-video-player-type', '');
         this.h5Player.setAttribute('x5-video-player-fullscreen', '');
-        this.h5Player.setAttribute('src', './video/test2.mp4');
+        this.h5Player.setAttribute('src', './test1.mp4');
 
         // 将播放器插入interactive-player节点
         this.playerDom.appendChild(this.h5Player);
@@ -53,16 +53,19 @@ class InteractivePlayer {
                         'click',
                         () => {
                             console.log('全屏');
+                            this.playerDom.webkitEnterFullscreen();
 
-                            if (this.playerDom.requestFullscreen) {
-                                return this.playerDom.requestFullscreen();
-                            } else if (this.playerDom.webkitRequestFullScreen) {
-                                return this.playerDom.webkitRequestFullScreen();
-                            } else if (this.playerDom.mozRequestFullScreen) {
-                                return this.playerDom.mozRequestFullScreen();
-                            } else {
-                                return this.playerDom.msRequestFullscreen();
-                            }
+                            // if (this.playerDom.requestFullscreen) {
+                            //     return this.playerDom.requestFullscreen();
+                            // } else if (this.playerDom.webkitRequestFullScreen) {
+                            //     return this.playerDom.webkitRequestFullScreen();
+                            // } else if (this.playerDom.mozRequestFullScreen) {
+                            //     return this.playerDom.mozRequestFullScreen();
+                            // } else if (this.playerDom.webkitEnterFullscreen()) {
+                            //     return this.playerDom.webkitEnterFullscreen()();
+                            // } else {
+                            //     return this.playerDom.msRequestFullscreen();
+                            // }
                         },
                         false
                     );
