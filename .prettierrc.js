@@ -9,5 +9,5 @@ module.exports = {
     requirePragma: false, // 是否要注释来决定是否格式化代码
     proseWrap: 'preserve', // 是否要换行
     tabWidth: 4, //缩进
-    endOfLine: 'auto'
+    endOfLine: 'auto' // 不检查行末格式
 };

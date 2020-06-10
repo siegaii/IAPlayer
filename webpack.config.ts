@@ -7,10 +7,15 @@ const config: webpack.Configuration = {
     entry: './src/index.ts',
     output: {
         path: resolve(__dirname, 'dist/js'),
-        filename: 'index.bundle.js'
+        filename: 'bundle.js'
     },
     module: {
         rules: [
+            {
+                test: /\.tsx?$/,
+                use: 'ts-loader',
+                exclude: /node_modules/
+            },
             {
                 test: /\.css$/,
                 use: ['style-loader', 'css-loader']
@@ -42,6 +47,9 @@ const config: webpack.Configuration = {
                 }
             }
         ]
+    },
+    resolve: {
+        extensions: ['.tsx', '.ts', '.js']
     },
     plugins: [
         new HtmlWebpackPlugin({
