@@ -1,4 +1,4 @@
-import { getElementCustomProps } from '../utils/dom';
+import { getElementCustomProps } from '~/ts/utils/dom';
 
 export class IAPlayer {
     constructor() {

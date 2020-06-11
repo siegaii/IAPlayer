@@ -26,12 +26,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1b3ec677-b200-4e54-bda4-773677bed366" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/scss/player.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ts/common/IAPlayer.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ts/utils/dom.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ts/common/IAPlayer.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/ts/common/IAPlayer.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/webpack.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/webpack.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,6 +102,8 @@
       <workItem from="1591754197756" duration="2551000" />
       <workItem from="1591773670847" duration="707000" />
       <workItem from="1591777634818" duration="1643000" />
+      <workItem from="1591844316772" duration="465000" />
+      <workItem from="1591844853826" duration="429000" />
     </task>
     <task id="LOCAL-00001" summary="prettier 不检查行末尾格式">
       <created>1591775953864</created>
@@ -112,7 +112,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591775953864</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="feat:IAPclass">
+      <created>1591783993622</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1591783993622</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,7 +151,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="prettier 不检查行末尾格式" />
-    <option name="LAST_COMMIT_MESSAGE" value="prettier 不检查行末尾格式" />
+    <MESSAGE value="feat:IAPclass" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat:IAPclass" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2149" y="253" key="#ESLint" timestamp="1591775987570">
@@ -159,34 +167,39 @@
       <screen x="1440" y="23" width="1920" height="999" />
     </state>
     <state x="2092" y="213" key="#dev/0.23.1440.877/1440.23.1920.999@1440.23.1920.999" timestamp="1591778232582" />
-    <state x="1984" y="23" key="CommitChangelistDialog2" timestamp="1591775952953">
-      <screen x="1440" y="23" width="1920" height="1057" />
+    <state x="1984" y="23" key="CommitChangelistDialog2" timestamp="1591783992442">
+      <screen x="1440" y="23" width="1920" height="999" />
     </state>
     <state x="1984" y="23" key="CommitChangelistDialog2/0.23.1440.819/1440.23.1920.1057@1440.23.1920.1057" timestamp="1591775952953" />
+    <state x="1984" y="23" key="CommitChangelistDialog2/0.23.1440.877/1440.23.1920.999@1440.23.1920.999" timestamp="1591783992442" />
     <state x="1640" y="142" width="1720" height="799" key="DiffContextDialog" timestamp="1591774013280">
       <screen x="1440" y="23" width="1920" height="999" />
     </state>
     <state x="1640" y="142" width="1720" height="799" key="DiffContextDialog/0.23.1440.877/1440.23.1920.999@1440.23.1920.999" timestamp="1591774013280" />
-    <state width="1899" height="266" key="GridCell.Tab.0.bottom" timestamp="1591781000832">
+    <state width="1899" height="266" key="GridCell.Tab.0.bottom" timestamp="1591844249753">
       <screen x="1440" y="23" width="1920" height="999" />
     </state>
-    <state width="1899" height="266" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.23.1920.999@1440.23.1920.999" timestamp="1591781000832" />
-    <state width="1899" height="266" key="GridCell.Tab.0.center" timestamp="1591781000831">
+    <state width="1899" height="266" key="GridCell.Tab.0.bottom/0.23.1440.877/1440.23.1920.999@1440.23.1920.999" timestamp="1591844249753" />
+    <state width="1899" height="266" key="GridCell.Tab.0.center" timestamp="1591844249751">
       <screen x="1440" y="23" width="1920" height="999" />
     </state>
-    <state width="1899" height="266" key="GridCell.Tab.0.center/0.23.1440.877/1440.23.1920.999@1440.23.1920.999" timestamp="1591781000831" />
-    <state width="1899" height="266" key="GridCell.Tab.0.left" timestamp="1591781000830">
+    <state width="1899" height="266" key="GridCell.Tab.0.center/0.23.1440.877/1440.23.1920.999@1440.23.1920.999" timestamp="1591844249751" />
+    <state width="1899" height="266" key="GridCell.Tab.0.left" timestamp="1591844249750">
       <screen x="1440" y="23" width="1920" height="999" />
     </state>
-    <state width="1899" height="266" key="GridCell.Tab.0.left/0.23.1440.877/1440.23.1920.999@1440.23.1920.999" timestamp="1591781000830" />
-    <state width="1899" height="266" key="GridCell.Tab.0.right" timestamp="1591781000832">
+    <state width="1899" height="266" key="GridCell.Tab.0.left/0.23.1440.877/1440.23.1920.999@1440.23.1920.999" timestamp="1591844249750" />
+    <state width="1899" height="266" key="GridCell.Tab.0.right" timestamp="1591844249752">
       <screen x="1440" y="23" width="1920" height="999" />
     </state>
-    <state width="1899" height="266" key="GridCell.Tab.0.right/0.23.1440.877/1440.23.1920.999@1440.23.1920.999" timestamp="1591781000832" />
+    <state width="1899" height="266" key="GridCell.Tab.0.right/0.23.1440.877/1440.23.1920.999@1440.23.1920.999" timestamp="1591844249752" />
     <state x="1530" y="171" key="SettingsEditor" timestamp="1591778156210">
       <screen x="1440" y="23" width="1920" height="999" />
     </state>
     <state x="1530" y="171" key="SettingsEditor/0.23.1440.877/1440.23.1920.999@1440.23.1920.999" timestamp="1591778156210" />
+    <state x="2000" y="258" key="Vcs.Push.Dialog.v2" timestamp="1591783998026">
+      <screen x="1440" y="23" width="1920" height="999" />
+    </state>
+    <state x="2000" y="258" key="Vcs.Push.Dialog.v2/0.23.1440.877/1440.23.1920.999@1440.23.1920.999" timestamp="1591783998026" />
     <state x="1865" y="175" key="VcsDiffUtil.ChangesDialog" timestamp="1591774065451">
       <screen x="1440" y="23" width="1920" height="999" />
     </state>

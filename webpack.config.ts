@@ -49,6 +49,9 @@ const config: webpack.Configuration = {
         ]
     },
     resolve: {
+        alias: {
+            '~': resolve(__dirname, 'src/')
+        },
         extensions: ['.tsx', '.ts', '.js']
     },
     plugins: [
