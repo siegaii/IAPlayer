@@ -1,6 +1,6 @@
-import { getElementCustomProps } from '~/ts/utils/dom';
+import IAVideo from '~/ts/common/IAVideo';
 
-export class IAPlayer {
+export default class IAPlayer {
     constructor() {
         this.LoadIAPlayers();
     }
@@ -11,18 +11,15 @@ export class IAPlayer {
     private LoadIAPlayers() {
         const containers = document.getElementsByTagName('interactive-player');
         for (let i = 0; i < containers.length; i++) {
-            const props = getElementCustomProps(containers[i]);
-            const player = this.getIAPlayer();
+            const player = new IAVideo();
+            const toolbar = this.getToolbar();
             containers[i].appendChild(player);
+            containers[i].appendChild(toolbar);
         }
     }
 
-    /**
-     * 获取一个互动视频播放器
-     */
-    private getIAPlayer(): HTMLVideoElement {
-        const player = document.createElement('video');
-        player.setAttribute('controls', '');
-        return player;
+    private getToolbar(): Element {
+        const toolbar = document.createElement('player-toolbar');
+        return toolbar;
     }
 }
