@@ -1,5 +1,9 @@
 import './scss/player.scss';
-import IAPlayer from './ts/common/IAPlayer';
+import IAP from './ts/common/IAP';
 
-const Player = new IAPlayer();
-export default { Player };
+const IAPlayer = new IAP();
+
+// ----------------测试------------
+IAPlayer.getPlayer();
+
+export default IAPlayer;

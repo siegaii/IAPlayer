@@ -1,8 +1,16 @@
 import { getIAToolbar } from '~/ts/common/IAToolbar';
 
-export default class IAPlayer {
+export default class IAP {
     constructor() {
         this.LoadIAPlayers();
+    }
+
+    public getPlayer() {
+        const container = document.getElementById('testPlayer');
+        if (container) {
+            // fixme 可能有兼容性问题
+            container.firstChild;
+        }
     }
 
     /**
