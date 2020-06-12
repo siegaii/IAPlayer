@@ -7,7 +7,7 @@
  * @param player
  */
 const loadSetVideoSrc = (player: Element) => {
-    console.dir(player);
+  console.dir(player);
 };
 
 /**
@@ -15,7 +15,7 @@ const loadSetVideoSrc = (player: Element) => {
  * @param player
  */
 export const loadAPIForPlayer = (player: Element) => {
-    loadSetVideoSrc(player);
+  loadSetVideoSrc(player);
 };
 
 export default { loadAPIForPlayer };
