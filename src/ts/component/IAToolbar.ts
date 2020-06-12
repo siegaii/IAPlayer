@@ -24,13 +24,6 @@ const initPlayBtn = (): HTMLButtonElement => {
     const playBtn = document.createElement('button');
     playBtn.className = 'iaplayer-play-btn';
     playBtn.textContent = '播放视频';
-    playBtn.addEventListener(
-        'click',
-        () => {
-            console.log('播放视频');
-        },
-        false
-    );
     return playBtn;
 };
 
