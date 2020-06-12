@@ -1,5 +1,7 @@
-import { throwError } from '~/ts/module/message';
+import { throwError } from './module/message';
 import { getIAToolbar } from './component/IAToolbar';
+import { getVideo } from './component/IAVideo';
+import { loadAPIForPlayer } from './module/apis';
 
 export default class IAP {
     constructor() {
@@ -7,7 +9,7 @@ export default class IAP {
     }
 
     /**
-     * 返回播放器的video
+     * 获取指定播放器实例
      */
     public getPlayer(id: string): Element {
         const container = document.getElementById(id);
@@ -34,7 +36,7 @@ export default class IAP {
      * @param player
      */
     private loadComponentForPlayer(player: Element) {
-        const video = this.getVideo();
+        const video = getVideo();
         const toolbar = getIAToolbar();
         player.appendChild(video);
         player.appendChild(toolbar);
@@ -44,10 +46,7 @@ export default class IAP {
      * 为单个播放器实例挂载API
      * @param player
      */
-    private loadAPIForPlayer(player: Element) {}
-
-    private getVideo(): HTMLVideoElement {
-        const video = document.createElement('video');
-        return video;
+    private loadAPIForPlayer(player: Element) {
+        loadAPIForPlayer(player);
     }
 }
