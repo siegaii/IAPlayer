@@ -1,7 +1,7 @@
-import { throwError } from './module/message';
 import { getIAToolbar } from './component/IAToolbar';
 import { getVideo } from './component/IAVideo';
 import { loadAPIForPlayer } from './module/apis';
+import { getPlayers, getPlayer } from './module/dom';
 
 export default class IAP {
     constructor() {
@@ -12,17 +12,14 @@ export default class IAP {
      * 获取指定播放器实例
      */
     public getPlayer(id: string): Element {
-        const container = document.getElementById(id);
-        return container
-            ? container
-            : throwError("Can't find this player element");
+        return getPlayer(id);
     }
 
     /**
      * 初始化所有播放器实例
      */
     private loadIAPlayers() {
-        const containers = document.getElementsByTagName('interactive-player');
+        const containers = getPlayers('interactive-player');
         for (let i = 0; i < containers.length; i++) {
             // 加载子组件
             this.loadComponentForPlayer(containers[i]);

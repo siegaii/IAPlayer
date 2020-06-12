@@ -1,3 +1,5 @@
+import { createElement } from '~/ts/module/dom';
+
 /*
     播放器工具栏组件模块
  */
@@ -6,9 +8,10 @@
  * 获取视频工具栏DOM
  */
 export const getIAToolbar = (): Element => {
-    const toolbar = document.createElement('player-toolbar');
-    const toolBox = document.createElement('div');
+    const toolbar = createElement('player-toolbar');
+    const toolBox = createElement('div');
 
+    // 初始化工具栏
     initTools(toolBox);
     toolbar.appendChild(toolBox);
     return toolbar;
