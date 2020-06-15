@@ -3,9 +3,9 @@
  */
 
 /**
- * 返回一个video元素
+ * 渲染一个video元素
  */
-export const getVideo = (): HTMLVideoElement => {
+export const renderVideo = (player: Element) => {
     const video = document.createElement('video');
-    return video;
+    player.appendChild(video);
 };

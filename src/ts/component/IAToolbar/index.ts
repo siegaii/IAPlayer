@@ -7,14 +7,14 @@ import { createElement } from '~/ts/module/dom';
 /**
  * 获取视频工具栏DOM
  */
-export const getIAToolbar = (): Element => {
+export const renderToolbar = (player: Element) => {
     const toolbar = createElement('player-toolbar');
     const toolBox = createElement('div');
 
     // 初始化工具栏
     initTools(toolBox);
     toolbar.appendChild(toolBox);
-    return toolbar;
+    player.appendChild(toolbar);
 };
 
 /**
@@ -34,4 +34,4 @@ const initPlayBtn = (): HTMLButtonElement => {
     return playBtn;
 };
 
-export default { getIAToolbar };
+export default { renderToolbar };
