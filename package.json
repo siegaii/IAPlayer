@@ -1,0 +1,8 @@
+{
+  "name": "sg-ia-player",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/siegaii/sg-ia-player.git",
+  "author": "siegaii <siiegaiii@gmail.com>",
+  "license": "MIT"
+}
