@@ -6,7 +6,11 @@
   "author": "siegaii <siiegaiii@gmail.com>",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^7.5.0",
+    "@typescript-eslint/eslint-plugin": "^3.6.1",
+    "@typescript-eslint/parser": "^3.6.1",
+    "eslint": "^7.4.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-plugin-import": "^2.22.0",
     "typescript": "^3.9.7"
   }
 }
