@@ -1,7 +1,9 @@
-interface my {
-    name: string;
+interface mase {
+  a: string;
 }
 
-const a = {c:1123}
+const a = true;
 
-a && console.log(123);
+const b = 1;
+
+a && console.log(b);
