@@ -10,5 +10,5 @@ module.exports = {
   proseWrap: 'preserve', // 是否要换行
   tabWidth: 2, //缩进
   endOfLine: 'auto', // 解决历史遗留的跨平台编码问题，建议加上
-  trailingComma: 'all',
-};
+  trailingComma: 'all', // 行末加逗号
+}
