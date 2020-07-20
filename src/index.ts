@@ -1,9 +1,9 @@
 interface mase {
-  a: string;
+  a: string
 }
 
-const a = true;
+const a = true
 
-const b = 1;
+const b = 1
 
-a && console.log(b);
+a && console.log(b)

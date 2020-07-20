@@ -20,4 +20,4 @@ module.exports = {
     'no-unused-expressions': 0,
     'no-console': 0,
   },
-};
+}

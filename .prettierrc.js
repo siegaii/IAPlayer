@@ -1,6 +1,6 @@
 module.exports = {
   printWidth: 100, // 换行字符串阈值
-  semi: true, // 句末加分号
+  semi: false, // 句末加分号
   singleQuote: true, // 用单引号
   trailingComma: 'none', // 最后一个对象元素加逗号
   bracketSpacing: true, // 对象，数组加空格
@@ -10,5 +10,5 @@ module.exports = {
   proseWrap: 'preserve', // 是否要换行
   tabWidth: 2, //缩进
   endOfLine: 'auto', // 解决历史遗留的跨平台编码问题，建议加上
-  trailingComma: 'all'
+  trailingComma: 'all',
 };
